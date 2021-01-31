@@ -6,18 +6,48 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Scene 1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/Menu.unity
+    guid: b892b229da3735749bfbdc557e776729
   - enabled: 1
-    path: Assets/Scenes/Scene 2.unity
-    guid: 94d1f9188e4c4a249a0d47dcf9b5e11c
+    path: Assets/Scenes/Hall.unity
+    guid: f4168cd483539f24f9e561334ad35aa6
   - enabled: 1
-    path: Assets/Scenes/Scene 3.unity
-    guid: d836a58ddeda66b4098660c2a05ab08b
+    path: Assets/Scenes/Sala de estar.unity
+    guid: e5778060cef447649a2d385743acd776
   - enabled: 1
-    path: Assets/Scenes/Scene 4.unity
-    guid: a0e153999cc084a4a9766a40af710dcb
+    path: Assets/Scenes/Varanda.unity
+    guid: dd0ea2a7a01a4fe42a48f39065f19fcc
   - enabled: 1
-    path: Assets/Scenes/Scene 5.unity
-    guid: 9753e6e357eedc74fa68dd20f2a922c5
+    path: Assets/Scenes/Cozinha.unity
+    guid: dfe5313c082c28445aa7bef7e6b94472
+  - enabled: 1
+    path: Assets/Scenes/Lavanderia.unity
+    guid: e3f2e69af2a7741428091dd9b195fdf5
+  - enabled: 1
+    path: Assets/Scenes/Sala de jantar.unity
+    guid: 073e8559ea92bdc47b715cfaaf9d679b
+  - enabled: 1
+    path: Assets/Scenes/Hall2.unity
+    guid: bd495cf2cead93241aa47569ba64e7dd
+  - enabled: 1
+    path: Assets/Scenes/Banheiro.unity
+    guid: a6fa2a9bf8b46a74d8e6c5bfac82be23
+  - enabled: 1
+    path: Assets/Scenes/Quarto de casal.unity
+    guid: 503c19e74cfe0e54c8c88a684bf9330e
+  - enabled: 1
+    path: Assets/Scenes/Suite.unity
+    guid: 1d965bf84067588419701ac62946b989
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 7f09dc499f09a5048899c157acea9ea5
+  - enabled: 1
+    path: Assets/Scenes/Cofre.unity
+    guid: 8505757f8d6c1ea4eb8d525c12537977
+  - enabled: 1
+    path: Assets/Scenes/Porta trancada.unity
+    guid: 36af361c1d49ae4428e95c1549ed8af1
+  - enabled: 1
+    path: Assets/Scenes/Fim.unity
+    guid: 655edb1371e87eb4da871e7be0634c56
   m_configObjects: {}

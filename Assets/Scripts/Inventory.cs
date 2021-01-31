@@ -29,6 +29,8 @@ public class Inventory : MonoBehaviour
     [SerializeField]
     Sprite resultmerge1;
 
+    public int globali;
+    public int globalh;
 
     public void Invmerge()
     {
@@ -40,6 +42,7 @@ public class Inventory : MonoBehaviour
             if (objmerge==Mergeditem1)
             {
                 itemmergebool1 = true;
+                globali = i;
                 break;
             }
             else i++;
@@ -51,14 +54,15 @@ public class Inventory : MonoBehaviour
             if (objmerge2 == Mergeditem2)
             {
                 itemmergebool2 = true;
+                globalh = h;
                 break;
             }
             else h++;
         }
         if((itemmergebool1)&&(itemmergebool2))
         {
-            this.gameObject.transform.GetChild(i).GetChild(0).GetChild(0).GetComponent<HotbarClick>().HotbarDelet();
-            this.gameObject.transform.GetChild(h).GetChild(0).GetChild(0).GetComponent<HotbarClick>().HotbarDelet();
+            this.gameObject.transform.GetChild(globali).GetChild(0).GetChild(0).GetComponent<HotbarClick>().HotbarDelet();
+            this.gameObject.transform.GetChild(globalh).GetChild(0).GetChild(0).GetComponent<HotbarClick>().HotbarDelet();
             this.Invstore(resultmerge1);
         }
 
@@ -87,8 +91,6 @@ public class Inventory : MonoBehaviour
         {
             objslot.transform.GetChild(0).GetChild(0).GetComponent<Image>().sprite = objImage;
             invslots[invused] = 1;
-            Debug.Log(invused);
-            Debug.Log(invslots);
         }
     }
 

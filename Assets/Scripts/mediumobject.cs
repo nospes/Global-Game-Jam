@@ -5,39 +5,27 @@ using UnityEngine.UI;
 
 public class mediumobject : MonoBehaviour
 {
-    public Image image;
-    bool mediumtrue = false;
+    [SerializeField] public Sprite trans;
+    [SerializeField] public Sprite trueimage;
+    public bool mediumtrue;
 
     private void Awake()
     {
-        image = GetComponent<Image>();
-        var tempColor = image.color;
-        tempColor.a = 0f;
-        image.color = tempColor;
+        mediumtrue = false;
     }
-
-    public float timer = 0;
-    public float waitTime = 10;
 
     private void Update()
     {
         mediumtrue = GameObject.FindGameObjectWithTag("Medium").GetComponent<mediumstate>().medium;
 
-
-            if (mediumtrue)
+        if (mediumtrue)
         {
-            image = GetComponent<Image>();
-            var tempColor = image.color;
-            tempColor.a = 1f;
-            image.color = tempColor;
+            this.GetComponent<SpriteRenderer>().sprite = trueimage;
 
         }
-        else
+            else
         {
-            image = GetComponent<Image>();
-            var tempColor = image.color;
-            tempColor.a = 0f;
-            image.color = tempColor;
+            this.GetComponent<SpriteRenderer>().sprite = trans;
         }
     }
 }

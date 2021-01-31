@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class DontDestroy : MonoBehaviour
 {
+
+
+
     public bool safeopen;
 
     // don't destroy in scene change & destroy multiple instances of HUD
@@ -39,5 +42,7 @@ public class DontDestroy : MonoBehaviour
         bool interact = InteractIDs.Contains(IDiteract);
         return interact;
     }
+
+
 
 }

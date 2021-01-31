@@ -8,6 +8,10 @@ TagManager:
   - Inventory
   - Item
   - Medium
+  - OBJInventory
+  - OBJitem
+  - Mediumunlock
+  - Ghost
   layers:
   - Default
   - TransparentFX

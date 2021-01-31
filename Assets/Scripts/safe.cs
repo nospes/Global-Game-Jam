@@ -20,11 +20,11 @@ public class safe : MonoBehaviour
 		safestatus = obj.GetComponent<DontDestroy>().safeopen;
 		if (safestatus)
 		{
-			Destroy(gameObject);
+			Destroy(transform.parent.gameObject);
 			Destroy(codeText);
 		}
 		else
-			itemsafed.GetComponent<Pickup>().tangible = false;
+			itemsafed.GetComponent<ObjectivePickup>().tangible = false;
 
 	}
 
@@ -36,11 +36,11 @@ public class safe : MonoBehaviour
 
 		codeText.text = codeTextValue;
 
-		if (codeTextValue == "1234")
+		if (codeTextValue == "6453")
 		{
 			obj.GetComponent<DontDestroy>().safeopen = true;
-			itemsafed.GetComponent<Pickup>().tangible = true;
-			Destroy(gameObject);
+			itemsafed.GetComponent<ObjectivePickup>().tangible = true;
+			Destroy(transform.parent.gameObject);
 			Destroy(codeText);
 		}
 
